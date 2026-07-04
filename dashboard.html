@@ -4,7 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SmartInvest Dashboard</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -14,21 +18,18 @@
         💎 SmartInvest
     </div>
 
-    <button onclick="logoutUser()">
+    <button class="logout-btn" onclick="logoutUser()">
         Logout
     </button>
 
 </nav>
 
-<section class="hero">
+<section class="dashboard-hero">
 
-    <h1>
-        Welcome To
-        <span>SmartInvest Pro</span>
-    </h1>
+    <h1>Investment Dashboard</h1>
 
     <p>
-        Monitor Investments, Growth and Financial Performance
+        Monitor portfolio growth, profits and investment performance.
     </p>
 
 </section>
@@ -36,24 +37,23 @@
 <section class="stats">
 
     <div class="card">
-        <h2 id="balance">
-            ₹50000
-        </h2>
-        <p>Total Balance</p>
+        <h3>Total Balance</h3>
+        <h2>₹ 50,000</h2>
     </div>
 
     <div class="card">
-        <h2 id="profit">
-            ₹12000
-        </h2>
-        <p>Total Profit</p>
+        <h3>Total Profit</h3>
+        <h2>₹ 12,500</h2>
     </div>
 
     <div class="card">
-        <h2 id="users">
-            5000+
-        </h2>
-        <p>Active Users</p>
+        <h3>Active Users</h3>
+        <h2>5,000+</h2>
+    </div>
+
+    <div class="card">
+        <h3>Growth Rate</h3>
+        <h2>15.8%</h2>
     </div>
 
 </section>
@@ -65,11 +65,11 @@
     <input
         type="number"
         id="amount"
-        placeholder="Enter Amount"
+        placeholder="Enter Investment Amount"
     >
 
     <button onclick="calculateProfit()">
-        Calculate Return
+        Calculate
     </button>
 
     <h3 id="result"></h3>
@@ -83,32 +83,65 @@
     <table>
 
         <tr>
-            <th>Name</th>
+            <th>Investment</th>
             <th>Amount</th>
             <th>Status</th>
         </tr>
 
         <tr>
-            <td>Investment Plan A</td>
-            <td>₹5000</td>
+            <td>Gold Plan</td>
+            <td>₹5,000</td>
             <td>Completed</td>
         </tr>
 
         <tr>
-            <td>Investment Plan B</td>
-            <td>₹8000</td>
+            <td>Silver Plan</td>
+            <td>₹8,000</td>
             <td>Completed</td>
         </tr>
 
         <tr>
-            <td>Investment Plan C</td>
-            <td>₹12000</td>
+            <td>Premium Plan</td>
+            <td>₹12,000</td>
             <td>Pending</td>
         </tr>
 
     </table>
 
 </section>
+
+<section class="features">
+
+    <div class="feature-card">
+        <h3>📈 Portfolio Analytics</h3>
+        <p>Track performance with modern charts and analytics.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>🔒 Secure Investment</h3>
+        <p>Advanced security and encrypted transactions.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>⚡ Fast Growth</h3>
+        <p>Monitor growth trends and financial opportunities.</p>
+    </div>
+
+</section>
+
+<footer>
+
+    <h2>SmartInvest</h2>
+
+    <p>
+        Smart Investment Management Platform
+    </p>
+
+    <p>
+        © 2026 All Rights Reserved
+    </p>
+
+</footer>
 
 <script src="script.js"></script>
 

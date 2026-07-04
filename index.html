@@ -3,35 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SmartInvest Pro - Login</title>
+<title>SmartInvest Pro</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        💎 SmartInvest
+    </div>
+
+    <ul class="nav-links">
+        <li>Home</li>
+        <li>About</li>
+        <li>Features</li>
+        <li>Contact</li>
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <p class="trust">
+        ✨ Trusted By 50,000+ Investors
+    </p>
+
+    <h1>
+        Grow Your Wealth With
+        <span>Smart Investments</span>
+    </h1>
+
+    <p class="hero-text">
+        A modern investment platform designed to help users
+        manage finances, track growth and visualize portfolio
+        performance.
+    </p>
+
+</section>
 
 <div class="login-container">
 
     <div class="login-box">
 
-        <h1>💎 SmartInvest Pro</h1>
-
-        <p class="subtitle">
-            Smart Investment Dashboard
-        </p>
+        <h2>Account Login</h2>
 
         <input
             type="text"
             id="username"
-            placeholder="Enter Username"
+            placeholder="Username"
         >
 
         <input
             type="password"
             id="password"
-            placeholder="Enter Password"
+            placeholder="Password"
         >
 
         <button onclick="loginUser()">
-            Login
+            Access Dashboard
         </button>
 
         <p id="message"></p>
@@ -39,6 +73,25 @@
     </div>
 
 </div>
+
+<section class="preview">
+
+    <div class="preview-card">
+        <h3>📈 Portfolio Tracking</h3>
+        <p>Track your investments in real time.</p>
+    </div>
+
+    <div class="preview-card">
+        <h3>💰 Daily Growth</h3>
+        <p>Monitor profits and financial performance.</p>
+    </div>
+
+    <div class="preview-card">
+        <h3>🔒 Secure Platform</h3>
+        <p>Advanced security for user protection.</p>
+    </div>
+
+</section>
 
 <script src="script.js"></script>
 
