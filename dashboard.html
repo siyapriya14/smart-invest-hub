@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartInvest Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        💎 SmartInvest
+    </div>
+
+    <button onclick="logoutUser()">
+        Logout
+    </button>
+
+</nav>
+
+<section class="hero">
+
+    <h1>
+        Welcome To
+        <span>SmartInvest Pro</span>
+    </h1>
+
+    <p>
+        Monitor Investments, Growth and Financial Performance
+    </p>
+
+</section>
+
+<section class="stats">
+
+    <div class="card">
+        <h2 id="balance">
+            ₹50000
+        </h2>
+        <p>Total Balance</p>
+    </div>
+
+    <div class="card">
+        <h2 id="profit">
+            ₹12000
+        </h2>
+        <p>Total Profit</p>
+    </div>
+
+    <div class="card">
+        <h2 id="users">
+            5000+
+        </h2>
+        <p>Active Users</p>
+    </div>
+
+</section>
+
+<section class="calculator">
+
+    <h2>Investment Calculator</h2>
+
+    <input
+        type="number"
+        id="amount"
+        placeholder="Enter Amount"
+    >
+
+    <button onclick="calculateProfit()">
+        Calculate Return
+    </button>
+
+    <h3 id="result"></h3>
+
+</section>
+
+<section class="transactions">
+
+    <h2>Recent Transactions</h2>
+
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>Investment Plan A</td>
+            <td>₹5000</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td>Investment Plan B</td>
+            <td>₹8000</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td>Investment Plan C</td>
+            <td>₹12000</td>
+            <td>Pending</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
